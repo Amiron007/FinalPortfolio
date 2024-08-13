@@ -88,18 +88,18 @@ menu a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: space-between; /* Ensure items are spaced evenly */
-    align-items: center; /* Center items vertically */
+    justify-content: space-between; 
+    align-items: top; 
 }
 
 /* About Text */
 .about-text {
-    flex-basis: 50%; /* Take up half the width */
+    flex-basis: 50%;
 }
 
 /* About Image */
 .about-image {
-    flex-basis: 40%; /* Take up slightly less than half the width */
+    flex-basis: 40%; 
     display: flex;
     justify-content: center;
     align-items: center;
