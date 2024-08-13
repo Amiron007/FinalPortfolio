@@ -37,19 +37,20 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <form id="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Send</button>
-            </form>
-        </section>
+    <button type="submit">Send</button>
+</form>
+
+      </section>
     </main>
 
     <!-- JavaScript for Interactivity -->
@@ -59,7 +60,6 @@
             nav.classList.toggle('active');
         }
 
-        // JavaScript to handle link navigation
         document.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function(event) {
                 event.preventDefault();
@@ -67,5 +67,30 @@
             });
         });
     </script>
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        
+        const templateParams = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value
+        };
+
+        emailjs.send("service_a2ora2n","template_lpvq8or");
+            .then(function(response) {
+                alert('Message sent successfully!');
+            }, function(error) {
+                alert('Failed to send the message. Please try again later.');
+            });
+    });
+</script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function() {
+      emailjs.init("dr8kkm9bOzluvmVJD"); 
+   })();
+</script>
 </body>
 </html>
