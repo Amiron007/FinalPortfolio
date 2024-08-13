@@ -83,14 +83,7 @@ menu a:hover {
     transition: 0.3s;
 }
 
-/* About Section */
-#about {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-between; 
-    align-items: top; 
-}
+
 
 /* About Text */
 .about-text {
