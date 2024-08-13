@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata and Stylesheet -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurmeet Singh's Portfolio</title>
     <link rel="stylesheet" href="Style sheets and Scripts/style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="header-container">
+            <!-- Logo and Name -->
             <div class="logo">
-                <img src="Logo and DP/White logo.png"  alt="Logo" class="logo-image"">
+                <img src="Logo and DP/White logo.png" alt="Logo" class="logo-image">
                 <h1>Gurmeet Singh</h1>
             </div>
-          <!-- Navigation Bar -->
-        <nav class="wrapper">
-            <menu>
-                <a href="index.html">Home</a>
-               
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </menu>
-        </nav>
+            <!-- Navigation Bar -->
+            <nav class="wrapper">
+                <menu>
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </menu>
+            </nav>
+            <!-- Menu Icon for Mobile Navigation -->
             <div class="menuIcon" onclick="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -30,6 +33,7 @@
         </div>
     </header>
 
+    <!-- Video Section -->
     <div class="video-section">
         <video autoplay muted loop>
             <source src="Display video/Videos.mp4" type="video/mp4">
@@ -41,35 +45,36 @@
         </div>
     </div>
 
+    <!-- Main Content -->
     <main>
+        <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
             <div class="about-text">
-                <p>I am Gurmeet Singh with over ten years of passion for visual communication and over 8 years of professional experience, I am a Senior Motion Graphic Designer, Animation Specialist, and Videographer.</p>
+                <p>I am Gurmeet Singh with over ten years of passion for visual communication and over 8 years of professional experience. I am a Senior Motion Graphic Designer, Animation Specialist, and Videographer.</p>
                 <p>My expertise lies in transforming static images and text into dynamic 2D and 3D animations and motion graphics. My user-centered, iterative design process prioritizes thorough research, conceptualization, and feedback-driven refinement.</p>
                 <p>Proficient in Adobe Creative Suite and motion design tools, I excel in digital branding, printing production, and digital storytelling. My goal is to create impactful designs that enhance user experiences and meet market demands, drawing inspiration from art, technology, and nature.</p>
             </div>
             <div class="about-image">
-                 <img src="Logo and DP/ABOUTPIC.png" alt="Gurmeet Singh" class="profile-image">
+                <img src="Logo and DP/ABOUTPIC.png" alt="Gurmeet Singh" class="profile-image">
             </div>
         </section>
-
-        
     </main>
+
+    <!-- JavaScript for Interactivity -->
     <script>
         function toggleMenu() {
             var nav = document.querySelector('nav');
             nav.classList.toggle('active');
         }
         
-         document.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', function(event) {
-        
-        event.preventDefault(); 
-        window.location.href = this.href; 
-    });
-});
-        
+        // JavaScript to handle link navigation
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); 
+                window.location.href = this.href; 
+            });
+        });
     </script>
 </body>
 </html>
