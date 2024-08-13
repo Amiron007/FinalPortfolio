@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="Style sheets and Scripts/style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="header-container">
+            <!-- Logo and Name -->
             <div class="logo">
-                <img src="Logo and DP/White logo.png"  alt="Logo" class="logo-image"">
+                <img src="Logo and DP/White logo.png" alt="Logo" class="logo-image">
                 <h1>Gurmeet Singh</h1>
             </div>
-          <!-- Navigation Bar -->
-        <nav class="wrapper">
-            <menu>
-                <a href="index.html">Home</a>
-               
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </menu>
-        </nav>
+            <!-- Navigation Bar -->
+            <nav class="wrapper">
+                <menu>
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </menu>
+            </nav>
+            <!-- Menu Icon for Mobile Navigation -->
             <div class="menuIcon" onclick="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -30,10 +32,9 @@
         </div>
     </header>
 
-    
-
+    <!-- Main Content -->
     <main>
-        
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
             <form>
@@ -50,18 +51,21 @@
             </form>
         </section>
     </main>
+
+    <!-- JavaScript for Interactivity -->
     <script>
         function toggleMenu() {
             var nav = document.querySelector('nav');
             nav.classList.toggle('active');
         }
-         document.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', function(event) {
-        
-        event.preventDefault(); 
-        window.location.href = this.href; 
-    });
-});
+
+        // JavaScript to handle link navigation
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = this.href;
+            });
+        });
     </script>
 </body>
 </html>
