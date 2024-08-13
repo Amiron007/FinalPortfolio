@@ -83,10 +83,41 @@ menu a:hover {
     transition: 0.3s;
 }
 
+/* About Section */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between; /* Ensure items are spaced evenly */
+    align-items: center; /* Center items vertically */
+}
+
+/* About Text */
+.about-text {
+    flex-basis: 50%; /* Take up half the width */
+}
+
+/* About Image */
+.about-image {
+    flex-basis: 40%; /* Take up slightly less than half the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Image */
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 /* Video Section */
 .video-section {
     position: relative;
-    height: 100vh; /* Full viewport height */
+    height: 80vh; 
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -451,5 +482,16 @@ nav.active {
 
     nav menu a:hover {
         background-color: #333; /* Slightly lighter hover effect */
+    }
+}
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .about-text,
+    .about-image {
+        flex-basis: 100%; /* Full width on smaller screens */
     }
 }
