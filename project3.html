@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="Style sheets and Scripts/style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="header-container">
+            <!-- Logo and Name -->
             <div class="logo">
-              
-                 <img src="Logo and DP/White logo.png" alt="Logo" class="logo-image">
+                <img src="Logo and DP/White logo.png" alt="Logo" class="logo-image">
                 <h1>Gurmeet Singh</h1>
             </div>
-          <!-- Navigation Bar -->
-        <nav class="wrapper">
-            <menu>
-                <a href="index.html">Home</a>
-               
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </menu>
-        </nav>
+            <!-- Navigation Bar -->
+            <nav class="wrapper">
+                <menu>
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </menu>
+            </nav>
+            <!-- Menu Icon for Mobile Navigation -->
             <div class="menuIcon" onclick="toggleMenu()">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -31,41 +32,41 @@
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
-         
+        <!-- Illustrations Section -->
         <section class="gallerySection">
             <h2>Illustrations - Editorial</h2>
-             <div class="pdfLinkContainer">
-                    <a href="Project 3_Illustration/Project 3_Illustration/Motion_8/Gurmeet_Singh_Corporate_Icon-compressed.pdf" target="_blank" class="pdfLink">View PDF Document</a>
-                </div>
+            <div class="pdfLinkContainer">
+                <a href="Project 3_Illustration/Project 3_Illustration/Motion_8/Gurmeet_Singh_Corporate_Icon-compressed.pdf" target="_blank" class="pdfLink">View PDF Document</a>
+            </div>
             <div class="galleryContainer">
                 <img src="Project 3_Illustration/Project 3_Illustration/Motion_8/Logo.jpg" alt="Project Image 1" class="galleryImage">
-                <img src="Project 3_Illustration\Project 3_Illustration\Dicor/Dicour Fashion Logo.jpg" alt="Project Image 2" class="galleryImage">
-                <img src="Project 3_Illustration\Project 3_Illustration\Dicor/Logo.jpg" alt="Project Image 3" class="galleryImage">
-                <img src="Project 3_Illustration\Project 3_Illustration\Dicor/Logo Mockup_01.jpg" alt="Project Image 4" class="galleryImage">
-                <img src="Project 3_Illustration\Project 3_Illustration\Dicor/Logo_Mockup_002.2.jpg" alt="Project Image 6" class="galleryImage">
-                <img src="Project 3_Illustration\Project 3_Illustration\Dicor/Mockup_03-2.jpg" alt="Project Image 7" class="galleryImage">
-                <img src="Project 3_Illustration\Project 3_Illustration\Cosse Doux/Logo1.jpg" alt="Project Image 8" class="galleryImage">
-                <img src="Project 3_Illustration\Project 3_Illustration\Cosse Doux/Logo2.jpg" alt="Project Image 9" class="galleryImage">
-                <img src="Project 3_Illustration\Project 3_Illustration\Cosse Doux/Cosse_Doux_Mockup copy.jpg" alt="Project Image 3" class="galleryImage">
-                
+                <img src="Project 3_Illustration/Project 3_Illustration/Dicor/Dicour Fashion Logo.jpg" alt="Dicour Fashion Logo" class="galleryImage">
+                <img src="Project 3_Illustration/Project 3_Illustration/Dicor/Logo.jpg" alt="Dicour Logo" class="galleryImage">
+                <img src="Project 3_Illustration/Project 3_Illustration/Dicor/Logo Mockup_01.jpg" alt="Dicour Logo Mockup" class="galleryImage">
+                <img src="Project 3_Illustration/Project 3_Illustration/Dicor/Logo_Mockup_002.2.jpg" alt="Dicour Logo Mockup 002.2" class="galleryImage">
+                <img src="Project 3_Illustration/Project 3_Illustration/Dicor/Mockup_03-2.jpg" alt="Dicour Mockup 03-2" class="galleryImage">
+                <img src="Project 3_Illustration/Project 3_Illustration/Cosse Doux/Logo1.jpg" alt="Cosse Doux Logo 1" class="galleryImage">
+                <img src="Project 3_Illustration/Project 3_Illustration/Cosse Doux/Logo2.jpg" alt="Cosse Doux Logo 2" class="galleryImage">
+                <img src="Project 3_Illustration/Project 3_Illustration/Cosse Doux/Cosse_Doux_Mockup copy.jpg" alt="Cosse Doux Mockup" class="galleryImage">
             </div>
         </section>
     </main>
 
+    <!-- JavaScript for Interactivity -->
     <script>
         function toggleMenu() {
-            const nav = document.querySelector('nav ul');
-            nav.classList.toggle('show');
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
         }
         
         document.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', function(event) {
-        
-        event.preventDefault(); 
-        window.location.href = this.href; 
-    });
-});
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = this.href;
+            });
+        });
     </script>
 </body>
 </html>
