@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurmeet Singh's Portfolio</title>
+    <link rel="stylesheet" href="Style sheets and Scripts/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+              
+                 <img src="Logo and DP/White logo.png" alt="Logo" class="logo-image">
+                <h1>Gurmeet Singh</h1>
+            </div>
+          <!-- Navigation Bar -->
+        <nav class="wrapper">
+            <menu>
+                <a href="index.html">Home</a>
+               
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </menu>
+        </nav>
+            <div class="menuIcon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+         
+        <section class="gallerySection">
+            <h2>Infographic - Editorial</h2>
+            <div class="pdfLinkContainer">
+                    <a href="Project 5_Infographic\Project 5_Infographic\Editorial Layout/Editorial_Layout_Assignment_gurmeet.pdf" target="_blank" class="pdfLink">View PDF Document</a>
+                </div>
+          <div class="pdfLinkContainer">
+                    <a href="Project 5_Infographic\Project 5_Infographic\Gym_infographic/Infographic_Preview.pdf" target="_blank" class="pdfLink">View PDF Document</a>
+                </div>
+                
+                
+                
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+      document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        
+        event.preventDefault(); 
+        window.location.href = this.href; 
+    });
+});
+    </script>
+</body>
+</html>

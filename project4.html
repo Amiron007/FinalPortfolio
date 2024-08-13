@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurmeet Singh's Portfolio</title>
+    <link rel="stylesheet" href="Style sheets and Scripts/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                
+                 <img src="Logo and DP/White logo.png" alt="Logo" class="logo-image">
+                <h1>Gurmeet Singh</h1>
+            </div>
+          <!-- Navigation Bar -->
+        <nav class="wrapper">
+            <menu>
+                <a href="index.html">Home</a>
+               
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </menu>
+        </nav>
+            <div class="menuIcon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+         
+        <section class="gallerySection">
+            <h2>Posters - Editorial</h2>
+            <div class="galleryContainer">
+                <img src="Project 4_Posters\Project 4_Posters/Channa Mereya Together02.jpg" alt="Project Image 1" class="galleryImage">
+              <img src="Project 4_Posters\Project 4_Posters/CM_HUG.jpg" alt="Project Image 2" class="galleryImage">
+              <img src="Project 4_Posters\Project 4_Posters/CM_RUN_UNCOMPRESSED_SEND.jpg" alt="Project Image 3" class="galleryImage">
+              <img src="Project 4_Posters\Project 4_Posters/CM_SNOW_UNCOMPRESSED_SEND.jpg" alt="Project Image 4" class="galleryImage">
+              <img src="Project 4_Posters\Project 4_Posters/KeS-4X6-C.jpg" alt="Project Image 5" class="galleryImage">
+              
+              <img src="Project 4_Posters\Project 4_Posters/KES_4X6-new.jpg" alt="Project Image 7" class="galleryImage">
+              <img src="Project 4_Posters\Project 4_Posters/POSTER01_final.jpg" alt="Project Image 6" class="galleryImage">
+              <img src="Project 4_Posters\Project 4_Posters/1.jpg" alt="Project Image 8" class="galleryImage">
+              <img src="Project 4_Posters\Project 4_Posters/2.jpg" alt="Project Image 9" class="galleryImage">
+                
+                
+                
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+        document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        // This ensures the link opens in the same tab
+        event.preventDefault(); // Prevents the default action if you are handling navigation via JavaScript
+        window.location.href = this.href; // Navigates to the URL
+    });
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurmeet Singh's Portfolio</title>
+    <link rel="stylesheet" href="Style sheets and Scripts/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                
+                 <img src="Logo and DP/White logo.png" alt="Logo" class="logo-image">
+                <h1>Gurmeet Singh</h1>
+            </div>
+          <!-- Navigation Bar -->
+        <nav class="wrapper">
+            <menu>
+                <a href="index.html">Home</a>
+               
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </menu>
+        </nav>
+            <div class="menuIcon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+           <section class="gallerySection">
+            <h2>Illustration - Editorial</h2>
+            <div class="galleryContainer">
+                <img src="Label Designs\Project 1_Label\King David Whiskey\all in one_Box Mock-up 4 copy.jpg" alt="Project Image 1" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\King David Whiskey\Bottle Mockup_1.jpg" alt="Project Image 2" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\King David Whiskey\Bottle Mockup-2.jpg" alt="Project Image 3" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\King David Whiskey\Bottle Mockup-3_v1.jpg" alt="Project Image 4" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\Pearl Rose Wine\Pearl Rose_Mockup-1.jpg" alt="Project Image 5" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\Pearl Rose Wine\all in one_Box Mock-up 4 copy 2.jpg" alt="Project Image 6" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\Pearl Rose Wine\Bottle_refo.jpg" alt="Project Image 7" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\Pearl Rose Wine\Pearl Rose_Mockup-3.jpg" alt="Project Image 8" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\Pearl Rose Wine\Pearl Rose_Mockup-4.jpg" alt= "Project Image 9" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\Pop_can\Can_design.jpg" alt="Project Image 10" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\Pop_can\Can_mock.jpg" alt="Project Image 11" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\Coor Beer\all in one_Box Mock-up 4 copy 22.jpg" alt="Project Image 12" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\Coor Beer\Beer_Mockups.jpg" alt="Project Image 14" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\King David Box\Open Box_Mockup.jpg" alt="Project Image 15" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\King David Box\Front Mockup_1.jpg" alt="Project Image 16" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\King David Box\Front Mockup_2.jpg" alt="Project Image 17" class="galleryImage" >
+                <img src="Open Box_Mockup_Matt.jpg" alt="Project Image 18" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\King David Box\Front Mockup_3.jpg" alt="Project Image 19" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\King David Box\Front Mockup_4.jpg" alt="Project Image 20" class="galleryImage">
+                <img src="Label Designs\Project 1_Label\King David Box\Open Box_Mockup_Embossing.jpg" alt="Project Image 21" class="galleryImage">
+                
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('show');
+        }
+
+        document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        // This ensures the link opens in the same tab
+        event.preventDefault(); // Prevents the default action if you are handling navigation via JavaScript
+        window.location.href = this.href; // Navigates to the URL
+    });
+});
+    </script>
+</body>
+</html>

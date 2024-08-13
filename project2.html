@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurmeet Singh's Portfolio</title>
+    <link rel="stylesheet" href="Style sheets and Scripts/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                
+                 <img src="Logo and DP/White logo.png" alt="Logo" class="logo-image">
+                <h1>Gurmeet Singh</h1>
+            </div>
+          <!-- Navigation Bar -->
+        <nav class="wrapper">
+            <menu>
+                <a href="index.html">Home</a>
+               
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </menu>
+        </nav>
+            <div class="menuIcon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+            <section id="portfolio">
+            <h2>Videos</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <div class="project-image">
+                        <img src="Thumbnail/British Orchard Nursery_Thumbnail copy.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-details">
+                        <h3>Video</h3>
+                        <p>Informative Video</p>
+                        <a href="https://youtu.be/MJiPRmNd5us" target="_blank" class="project-button">Open Video</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="Thumbnail/Dubai top 10 Deals_Thumbnail copy.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-details">
+                        <h3>Video</h3>
+                        <p>Informative Video</p>
+                        <a href="https://youtu.be/s2zAAtaddRI" target="_blank" class="project-button">Open Video</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="Thumbnail/Dubai Entrepreneurs_Thumbnail.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-details">
+                        <h3>Video</h3>
+                        <p>Promotional Video</p>
+                        <a href="https://youtu.be/cvxILGGR40E" target="_blank" class="project-button">Open Video</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="Thumbnail/Insta web_Thumbnail.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-details">
+                        <h3>Video</h3>
+                        <p>Web Banner Video</p>
+                        <a href="https://youtu.be/wvSK4wK7CmQ" target="_blank" class="project-button">Open Video</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="Thumbnail/Lubxpress_Thumbnail.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-details">
+                        <h3>Video</h3>
+                        <p>Logo Animation Video</p>
+                        <a href="https://youtu.be/_CJ1O92hE2s" target="_blank" class="project-button">Open Video</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="Thumbnail/Maestro Studio of English Language_Thumbnail.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-details">
+                        <h3>Video</h3>
+                        <p>Logo Animation Video</p>
+                        <a href="https://youtu.be/SSBj2L0a2tY" target="_blank" class="project-button">Open Video</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="Thumbnail/Nexturn_Thumbnail.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-details">
+                        <h3>Video</h3>
+                        <p>Logo Animation Video</p>
+                        <a href="https://youtu.be/7GnuNDJE7oE" target="_blank" class="project-button">Open Video</a>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+    </main>
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+        document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(event) {
+        
+        event.preventDefault(); 
+        window.location.href = this.href; 
+    });
+});
+    </script>
+</body>
+</html>
